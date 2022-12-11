@@ -1,2 +1,2 @@
-# Tiktok-Content-Bot
-Automates downloading content, editing, and uploading to Tiktok 
+# Tiktok-Content-Bot 
+Automates downloading content, editing, and uploading to Tiktok [WP]
