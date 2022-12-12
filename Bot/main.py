@@ -23,23 +23,23 @@ def new_file():
     os.mkdir("content")
 
 if __name__ == "__main__":
-    choice = input("(A)nime, (F)amily Guy, (S)impsons \n").upper()
+    choice = input("(A)nime, (F)amily Guy, (S)impsons \n:").upper()
     match input:
         case "A":
+            new_file()
             download_anime()
             split_up()
             upload()
-            new_file()
         case "F":
+            new_file()
             download_familyguy()
             split_up()
             upload()
-            new_file()
         case "S":
+            new_file()
             download_simpsons()
             split_up()
             upload()
-            new_file()
         case _:
             print("Invalid Input Type")
             exit
