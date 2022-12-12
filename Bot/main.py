@@ -18,25 +18,18 @@ def split_up():
 def upload():
     pass
 
-def new_file():
-    if os.path.exists("content"): rmtree("content") 
-    os.mkdir("content")
-
 if __name__ == "__main__":
-    choice = input("(A)nime, (F)amily Guy, (S)impsons \n:").upper()
-    match input:
-        case "A":
-            new_file()
+    choice = input("(A)nime, (F)amily Guy, (S)impsons \n: ").upper()
+    match choice:
+        case 'A':
             download_anime()
             split_up()
             upload()
-        case "F":
-            new_file()
+        case 'F':
             download_familyguy()
             split_up()
             upload()
-        case "S":
-            new_file()
+        case 'S':
             download_simpsons()
             split_up()
             upload()
