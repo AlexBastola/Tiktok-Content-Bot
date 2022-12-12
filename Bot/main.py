@@ -1,7 +1,8 @@
-from os import system
+import os
+from shutil import rmtree
 
 def download_anime():
-    system("python -m animdl download")
+    os.system("python -m animdl download")
 
 def download_familyguy():
     pass
@@ -16,7 +17,8 @@ def upload():
     pass
 
 def new_file():
-    pass
+    if os.path.exists("content"): rmtree("content") 
+    os.mkdir("content")
 
 if __name__ == "__main__":
     choice = input("(A)nime, (F)amily Guy, (S)impsons \n").upper()
