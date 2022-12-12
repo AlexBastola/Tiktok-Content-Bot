@@ -17,7 +17,7 @@ def upload():
     pass
 
 def new_file():
-    if os.path.exists("content"): rmtree("content") 
+    if os.path.exists("content"): rmtree("content") #Clears content folder if it exists
     os.mkdir("content")
 
 if __name__ == "__main__":
