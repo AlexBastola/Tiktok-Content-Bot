@@ -18,6 +18,9 @@ def split_up():
 def upload():
     pass
 
+def cleanup():
+    pass
+
 if __name__ == "__main__":
     choice = input("(A)nime, (F)amily Guy, (S)impsons \n: ").upper()
     match choice:
@@ -25,14 +28,17 @@ if __name__ == "__main__":
             download_anime()
             split_up()
             upload()
+            cleanup()
         case 'F':
             download_familyguy()
             split_up()
             upload()
+            cleanup()
         case 'S':
             download_simpsons()
             split_up()
             upload()
+            cleanup()
         case _:
             print("Invalid Input Type")
             exit
