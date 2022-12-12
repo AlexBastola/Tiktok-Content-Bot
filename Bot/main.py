@@ -15,18 +15,24 @@ def split_up():
 def upload():
     pass
 
+def new_file():
+    pass
+
 if __name__ == "__main__":
     choice = input("(A)nime, (F)amily Guy, (S)impsons \n").upper()
     match input:
         case "A":
+            new_file()
             download_anime()
             split_up()
             upload()
         case "F":
+            new_file()
             download_familyguy()
             split_up()
             upload()
         case "S":
+            new_file()
             download_simpsons()
             split_up()
             upload()
